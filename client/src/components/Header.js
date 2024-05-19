@@ -35,6 +35,7 @@ const Header = () => {
             <NavItem to="/courses">
               <strong>Courses</strong>
             </NavItem>
+            <p className="text-2xl text-gray-400 hidden md:block">|</p>
             <Link to="/dashboard">
               <img src={user.profilePicture} alt="Profile" className="h-6 w-6 rounded-full" />
             </Link>

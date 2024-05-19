@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Connect, Guide, HomeText } from '../components/index.js';
+import { Header, HomeLinks, HomeText } from '../components/index.js';
 
 const Home = () => {
   return (
@@ -28,9 +28,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div id='section2' className='pb-32'>
-        <Connect />
-        <Guide />
+      <div id='section2'>
+        <HomeLinks/>
       </div>
 
     </div>

@@ -9,6 +9,7 @@ const Header = () => {
     <Link to={to} className="hover:text-blue-500 text-xs md:text-base">{children}</Link>
   );
 
+  // making a small comment to test my git
   return (
     user && (
       <div className="sticky backdrop-blur-md bg-opacity-60 bg-white top-0 z-50">

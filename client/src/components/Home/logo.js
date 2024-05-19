@@ -5,12 +5,12 @@ const Logo = () => {
   return (
     <div>
       <div className="flex items-center justify-center mt-4">
-        <div className="inline-flex items-center justify-center rounded-md bg-red-600 p-12">
+        <div className="w-screen h-screen inline-flex items-center justify-center rounded-md p-12">
           <motion.h1
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2 }}
-            className="text-8xl font-bold text-white"
+            className="text-8xl font-bold text-grey"
             style={{ textShadow: '0 0 2px black' }}
           >
             SFU

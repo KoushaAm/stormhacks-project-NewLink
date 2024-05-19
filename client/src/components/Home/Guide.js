@@ -23,7 +23,7 @@ const Guide = () => {
           animate={{ y: 0, opacity: 1 }} // Animation to default position and opacity
           exit={{ y: -20, opacity: 0 }} // Exit animation
         >
-          <h2 className="text-4xl text-center font-bold mb-12 mt-12">Guide</h2>
+          <h2 className="text-4xl text-center font-bold pt-12">Guide</h2>
           <p className="text-lg text-center">Take me to the SFU guide</p>
         </motion.div>
       </Link>

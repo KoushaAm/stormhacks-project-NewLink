@@ -42,7 +42,10 @@ router.get('/load', async (req, res) => {
     console.log('loading model');
     try {
 
-        model = new LlamaCpp({ modelPath: llamaPath });
+        model = new LlamaCpp({ 
+            modelPath: llamaPath ,
+            maxTokens: 512,
+        });
         embeddings = new HuggingFaceInferenceEmbeddings({
             apiKey: "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", 
         });
@@ -71,6 +74,7 @@ router.get('/load', async (req, res) => {
             model,
             new StringOutputParser(),
         ]);
+
         res.json({ message: 'Model initialized'})
         loaded = true;
 

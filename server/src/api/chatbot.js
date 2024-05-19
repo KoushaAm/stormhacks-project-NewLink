@@ -44,7 +44,7 @@ router.get('/load', async (req, res) => {
 
         model = new LlamaCpp({ 
             modelPath: llamaPath ,
-            maxTokens: 512,
+            maxTokens: 128,
         });
         embeddings = new HuggingFaceInferenceEmbeddings({
             apiKey: "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", 

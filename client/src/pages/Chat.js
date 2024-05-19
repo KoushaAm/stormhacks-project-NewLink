@@ -4,10 +4,10 @@ import { Header, Chatbot } from '../components/index.js';
 const Chat = () => {
   return (
     <>
-    <Header/>
-    <div className="bg-slate-500">
-      <Chatbot />
-    </div>
+      <Header />
+      <div className="bg-slate-500">
+        <Chatbot />
+      </div>
     </>
   );
 };

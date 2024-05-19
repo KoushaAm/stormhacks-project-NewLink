@@ -14,7 +14,12 @@ const Dashboard = () => {
           <div>
             <p>Name: {user.username}</p>
             <p>Email: {user.email}</p>
-            {/* Add more user data here as needed */}
+            <p>Tags:</p>
+            <ul>
+              {user.tags.map((tag, index) => (
+                <li key={index}>{tag}</li>
+              ))}
+            </ul>
           </div>
         )}
       </div>

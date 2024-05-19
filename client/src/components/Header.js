@@ -6,7 +6,9 @@ const Header = () => {
   const user = useUser();
 
   const NavItem = ({ to, children }) => (
-    <Link to={to} className="hover:text-blue-500 text-xs md:text-base">{children}</Link>
+    <Link to={to} className="hover:text-blue-500 text-xs md:text-base">
+      {children}
+    </Link>
   );
 
   return (
@@ -21,7 +23,7 @@ const Header = () => {
             <NavItem to="/chat">Chat</NavItem>
             <NavItem to="/connect">Connect</NavItem>
             <NavItem to="/organisations">Organisations</NavItem>
-            <p className='text-2xl text-gray-400 hidden md:block'>|</p>
+            <p className="text-2xl text-gray-400 hidden md:block">|</p>
             <Link to="/dashboard">
               <img src={user.profilePicture} alt="Profile" className="h-6 w-6 rounded-full" />
             </Link>

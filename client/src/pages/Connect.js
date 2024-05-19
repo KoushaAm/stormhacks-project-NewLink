@@ -1,12 +1,15 @@
 import React from 'react';
 import { Header } from '../components/index.js';
 import { Link } from 'react-router-dom';
+import useUser from '../hooks/useUser.js';
 
-const Connect = () => {
+const useEvents = () => {
+  // TODO: Retrieve these events from the backend
   const events = [
     {
       id: 1,
       title: 'Lunch at the Park',
+      description: 'Join us for a fun lunch at the park!',
       tags: ['food', 'outdoors'],
       date: '2022-12-01',
       time: '12:00',
@@ -14,26 +17,19 @@ const Connect = () => {
     {
       id: 2,
       title: 'Study Group',
+      description: 'Study group for all computer science students.',
       tags: ['sfu', 'study', 'education', 'computer science'],
       date: '2022-12-02',
       time: '14:00',
     },
-    {
-      id: 3,
-      title: 'Hiking Trip',
-      tags: ['outdoors', 'exercise'],
-      date: '2022-12-03',
-      time: '10:00',
-    },
-    {
-      id: 4,
-      title: 'Book Club Meeting',
-      tags: ['education', 'reading'],
-      date: '2022-12-04',
-      time: '16:00',
-    },
+    // ...other events
   ];
 
+  return events;
+};
+
+const useTagColors = () => {
+  // TODO: Retrieve these colors from the backend
   const tagColors = {
     food: '#FF6347', // Tomato
     outdoors: '#FFD700', // Gold
@@ -41,9 +37,20 @@ const Connect = () => {
     education: '#1E90FF', // DodgerBlue
     'computer science': '#9370DB', // MediumPurple
     sfu: '#FFC0CB', // Pink
-    exercise: '#FFA500', // Orange
-    reading: '#8A2BE2', // BlueViolet
+    // ...other colors
   };
+
+  return tagColors;
+};
+
+const Connect = () => {
+  const user = useUser();
+  const events = useEvents();
+  const tagColors = useTagColors();
+
+  if (!user) {
+    return <p>Please log in to view this page.</p>;
+  }
 
   return (
     <>
@@ -51,7 +58,8 @@ const Connect = () => {
       <div className="min-h-screen bg-slate-500 p-4 flex flex-col items-center">
         <h1 className="text-2xl font-bold mb-4 text-center">Connect</h1>
         <p className="text-center">
-          Create events, join existing ones, and connect with people who share your interests.
+          Welcome, {user.username}! Create events, join existing ones, and connect with people who
+          share your interests.
         </p>
 
         <div className="mt-8">
@@ -68,6 +76,7 @@ const Connect = () => {
                 <h3 className="text-lg font-bold">{event.title}</h3>
                 <p>Date: {event.date}</p>
                 <p>Time: {event.time}</p>
+                <p>Description: {event.description}</p>
                 <div className="flex flex-wrap">
                   {event.tags.map((tag, i) => (
                     <span

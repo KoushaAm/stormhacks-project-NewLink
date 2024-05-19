@@ -7,6 +7,7 @@ const Chatbot = () => {
     const [input, setInput] = useState('');
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [messagesLoading, setMessagesLoading] = useState(false);
 
     const messageVariants = {
         hidden: { opacity: 0, x: -50 },
@@ -40,14 +41,17 @@ const Chatbot = () => {
         const newMessages = [...messages, { text: input, user: true }];
         setMessages(newMessages);
         setInput('');
+        setMessagesLoading(true);
 
         try {
             const response = await axios.post('http://localhost:8080/prompt', { question: input });
             const answer = response.data.answer;
 
             setMessages([...newMessages, { text: answer, user: false }]);
+            setMessagesLoading(false);
         } catch (error) {
             console.error('Error fetching AI response:', error);
+            setMessagesLoading(false);
         }
     };
 
@@ -91,6 +95,25 @@ const Chatbot = () => {
                             )}
                         </motion.div>
                     ))}
+                    {messagesLoading && (
+                        <motion.div
+                            className="flex items-center mb-2"
+                            initial="hidden"
+                            animate="visible"
+                            variants={messageVariants}
+                            transition={{ duration: 0.5 }}
+                        >
+                            <div className="rounded-lg p-2 shadow max-w-sm bg-white flex items-center">
+                                <div className="loader mr-2"></div>
+                                <div class='flex space-x-2 px-4 py-4 justify-center items-center bg-white white:invert'>
+                                    <span class='sr-only'>Loading...</span>
+                                    <div class='h-2 w-2 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+                                    <div class='h-2 w-2 bg-black rounded-full animate-bounce [animation-delay:-0.15s]'></div>
+                                    <div class='h-2 w-2 mr-4 bg-black rounded-full animate-bounce'></div>
+                                </div>
+                            </div>
+                        </motion.div>
+                    )}
                 </div>
             </div>
             <div className="bg-gray-100 px-4 py-2">

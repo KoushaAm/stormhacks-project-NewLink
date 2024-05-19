@@ -1,7 +1,9 @@
 import Header from './Header.js';
-import Connect from './Connect.js';
-import Courses from './Courses.js';
-import Guide from './Guide.js';
-import Chatbot from './Chatbot.js';
+import Connect from './Home/Connect.js';
+import Courses from './Home/Guide.js';
+import Guide from './Home/Guide.js';
+import Chatbot from './Chat/Chatbot.js';
+import Logo from './Home/logo.js';
 
-export { Header, Connect, Courses, Guide, Chatbot };
+
+export { Header, Connect, Courses, Guide, Chatbot, Logo };

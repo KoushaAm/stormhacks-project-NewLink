@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const Logo = () => {
+const HomeText = () => {
   return (
     <div>
       <div className="flex items-center justify-center mt-4 mb-12">
@@ -21,4 +21,4 @@ const Logo = () => {
   );
 };
 
-export default Logo;
+export default HomeText;

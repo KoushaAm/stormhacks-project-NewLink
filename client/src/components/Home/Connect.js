@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom'; // Make sure to import Link from react-router-dom
+import { Link } from 'react-router-dom';
 
 const Connect = () => {
   return (

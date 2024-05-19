@@ -7,7 +7,9 @@ const Header = () => {
   const user = useUser();
 
   const NavItem = ({ to, children }) => (
-    <Link to={to} className="hover:text-blue-500 text-sm md:text-lg"> {/* Adjusted font sizes */}
+    <Link to={to} className="hover:text-blue-500 text-sm md:text-lg">
+      {' '}
+      {/* Adjusted font sizes */}
       {children}
     </Link>
   );
@@ -36,9 +38,12 @@ const Header = () => {
             </NavItem>
             <p className="text-2xl text-gray-400 hidden md:block">|</p>
             <Link to="/dashboard">
-             
               <img
-                src={user.profilePicture ? user.profilePicture : 'https://cdn-icons-png.flaticon.com/512/42/42877.png'}
+                src={
+                  user.profilePicture
+                    ? user.profilePicture
+                    : 'https://cdn-icons-png.flaticon.com/512/42/42877.png'
+                }
                 alt="Profile"
                 className="h-6 w-6 rounded-full"
               />

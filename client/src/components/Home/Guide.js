@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const Courses = () => {
+const Guide = () => {
   return (
     <div className="flex items-center justify-center bg-cyan-600">
       <div>
@@ -21,4 +21,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default Guide;

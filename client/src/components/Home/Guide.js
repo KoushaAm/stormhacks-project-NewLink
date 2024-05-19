@@ -9,11 +9,11 @@ const Guide = () => {
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.3 }}
       >
-        <div className='bg-slate-300 p-32 rounded-lg'>
+        <div className='bg-slate-300 ml-10 max-w-md rounded-lg p-8'>
           <p className="text-center text-lg text-gray-800">
-            This is a paragraph below the SFU heading.
-            <br />
-            You can add more text or content here as needed.
+            We made an AI assistant to help you with general inquiries related to SFU culture and its history.
+            We have utilized the <strong>Llama 3 model</strong> and a rich database to provide you with the best possible answers.
+          
           </p>
         </div>
       </motion.div>
@@ -23,7 +23,7 @@ const Guide = () => {
         <motion.div
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
-          className="bg-red-700 shadow-2xl mt-20 mr-5 text-white rounded-lg hover:bg-red-00 p-24 transition duration-300"
+          className="bg-red-700 shadow-2xl mt-20 mr-5 ml-5 text-white rounded-lg hover:bg-red-600 p-24 transition duration-300"
         >
           <h2 className="text-4xl text-center font-bold pt-12">Guide</h2>
           <p className="text-lg text-center">Take me to the SFU guide</p>

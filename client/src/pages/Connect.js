@@ -27,7 +27,7 @@ const Connect = () => {
           <h2 className="text-xl font-bold mb-2 text-center">Posted Events</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-32">
             {events.map((event, index) => (
-              <div key={event.id} className="bg-red-700 p-12 m-2 rounded-3xl shadow-2xl">
+              <div key={event.id} className="bg-red-700 p-12 m-2 rounded-3xl shadow-2xl ">
                 <h3 className="text-xl font-bold text-black">{event.title}</h3>
                 <p className="text-black">Date: {event.date}</p>
                 <p className="text-black">Time: {event.time}</p>

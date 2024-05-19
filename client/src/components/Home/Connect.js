@@ -7,7 +7,7 @@ const Connect = () => {
     <div className="flex items-center justify-center">
       <Link to="/connect" className="hover:no-underline">
         <motion.div
-          className="bg-blue-500 text-white rounded-lg hover:bg-blue-600 w-96 h-72 transition duration-300"
+          className="bg-red-700 shadow-2xl ml-5 text-white rounded-lg hover:bg-blue-600 w-96 h-72 transition duration-300"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           initial={{ y: -20, opacity: 0 }}

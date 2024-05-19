@@ -15,11 +15,9 @@ const Home = () => {
             </a>
         </div>
       </div>
-      <div id='section2'>
+      <div id='section2' className='pb-32'>
         <Connect />
-        <div className="mt-12 mb-12">
         <Guide />
-      </div>
       </div>
     </div>
   );

@@ -27,28 +27,28 @@ const Connect = () => {
           <h2 className="text-xl font-bold mb-2 text-center">Posted Events</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-32">
             {events.map((event, index) => (
-              <div key={event.id} className="bg-slate-200 p-4 rounded-xl mb-4">
-                <h3 className="text-lg font-bold">{event.title}</h3>
-                <p>Date: {event.date}</p>
-                <p>Time: {event.time}</p>
-                <details className='mb-4'>
-                  <summary>Description</summary>
-                  <p>{event.description}</p>
+              <div key={event.id} className="bg-red-600 p-4  rounded-xl mb-4 shadow-2xl">
+                <h3 className="text-xl font-bold text-black">{event.title}</h3>
+                <p className="text-black">Date: {event.date}</p>
+                <p className="text-black">Time: {event.time}</p>
+                <details className="mb-4">
+                  <summary className="text-black cursor-pointer">Description</summary>
+                  <p className="text-black">{event.description}</p>
                 </details>
                 <div className="flex items-center flex-wrap">
                   {event.tags.map((tag, i) => (
                     <span
                       key={i}
                       style={{ backgroundColor: tagColors[tag] }}
-                      className="text-white px-2 py-1 rounded mr-2 mb-2"
+                      className="text-black px-2 py-1 rounded mr-2 mb-2"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
                 <Link
-                  to={`/event/${event.id}`}
-                  className="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded"
+                  to={`/connect`}
+                  className="mt-2 inline-block bg-blue-900 text-white px-4 py-2 rounded"
                 >
                   View Event
                 </Link>
@@ -58,7 +58,7 @@ const Connect = () => {
         </div>
         <div className="mt-12">
           <h2 className="text-xl font-bold mb-2 text-center">Create Event</h2>
-          <Link to="/create-event" className="bg-blue-500 text-white px-4 py-2 rounded self-center">
+          <Link to="/connect" className="bg-blue-500 text-white px-4 py-2 rounded self-center">
             Create New Event
           </Link>
         </div>

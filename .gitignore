@@ -1,0 +1,4 @@
+node_modules
+.DS_Store
+server/model/Meta-Llama-3-8B-Instruct.Q2_K.gguf
+.env

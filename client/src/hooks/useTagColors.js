@@ -1,23 +1,22 @@
 export const useTagColors = () => {
   const tagColors = {
-    food: '#CD5C5C', // IndianRed
-    outdoors: '#DAA520', // Goldenrod
-    study: '#228B22', // ForestGreen
-    education: '#0000CD', // MediumBlue
-    'computer science': '#800080', // Purple
-    sfu: '#FF69B4', // HotPink
-    'book club': '#FF8C00', // DarkOrange
-    reading: '#800000', // Maroon
-    books: '#008080', // Teal
-    yoga: '#008000', // Green
-    exercise: '#CD5C5C', // IndianRed
-    wellness: '#483D8B', // DarkSlateBlue
-    coding: '#008B8B', // DarkCyan
-    workshop: '#2E8B57', // SeaGreen
-    art: '#8B4513', // SaddleBrown
-    exhibition: '#8B0000', // DarkRed
-    local: '#4682B4', // SteelBlue
-    // ...other colors
+    food: '#CD5C5C',
+    outdoors: '#DAA520',
+    study: '#228B22',
+    education: '#0000CD',
+    'computer science': '#800080',
+    sfu: '#FF69B4',
+    'book club': '#FF8C00',
+    reading: '#800000',
+    books: '#008080',
+    yoga: '#008000',
+    exercise: '#CD5C5C',
+    wellness: '#483D8B',
+    coding: '#008B8B',
+    workshop: '#2E8B57',
+    art: '#8B4513',
+    exhibition: '#8B0000',
+    local: '#4682B4',
   };
   return tagColors;
 };

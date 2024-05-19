@@ -12,7 +12,7 @@ export default function Main() {
       <Route path="/" element={<Home />} />
       <Route path="/chat" element={<Chat />} />
       <Route path="/connect" element={<Connect />} />
-      <Route path="/courses" element={<Courses/>} />
+      <Route path="/courses" element={<Courses />} />
       <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   );

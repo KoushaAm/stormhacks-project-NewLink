@@ -43,7 +43,7 @@ const CourseCard = ({ course }) => {
   return (
     <div className="bg-red-700 p-12 m-2 rounded-3xl shadow-2xl">
       <h2 className="font-bold text-white text-2xl mb-2">{course.name}</h2>
-      <p className='text-white'>{course.description}</p>
+      <p className="text-white">{course.description}</p>
     </div>
   );
 };

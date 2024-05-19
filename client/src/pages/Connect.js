@@ -18,16 +18,16 @@ const Connect = () => {
     <>
       <Header />
       <div className="min-h-screen p-4 flex flex-col items-center">
-        <h1 className="text-2xl font-bold mb-4 text-center">Connect</h1>
+        <h1 className="text-4xl font-bold mb-4 text-center">Connect</h1>
         <p className="text-center">
-          Welcome, {user.username}! <br />
+          Welcome, <strong>{user.username}!</strong> <br />
           Create events, join existing ones, and connect with people who share your interests.
         </p>
         <div className="mt-8 w-full overflow-auto md:overflow-visible">
           <h2 className="text-xl font-bold mb-2 text-center">Posted Events</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-32">
             {events.map((event, index) => (
-              <div key={event.id} className="bg-red-600 p-4  rounded-xl mb-4 shadow-2xl">
+              <div key={event.id} className="bg-red-700 p-12 m-2 rounded-3xl shadow-2xl">
                 <h3 className="text-xl font-bold text-black">{event.title}</h3>
                 <p className="text-black">Date: {event.date}</p>
                 <p className="text-black">Time: {event.time}</p>
@@ -40,7 +40,7 @@ const Connect = () => {
                     <span
                       key={i}
                       style={{ backgroundColor: tagColors[tag] }}
-                      className="text-black px-2 py-1 rounded mr-2 mb-2"
+                      className="text-white px-2 py-1 rounded-2xl mr-2 mb-2"
                     >
                       {tag}
                     </span>
@@ -48,7 +48,7 @@ const Connect = () => {
                 </div>
                 <Link
                   to={`/connect`}
-                  className="mt-2 inline-block bg-blue-900 text-white px-4 py-2 rounded"
+                  className="mt-2 inline-block bg-blue-900 text-white px-4 py-2 rounded-2xl"
                 >
                   View Event
                 </Link>
@@ -56,9 +56,9 @@ const Connect = () => {
             ))}
           </div>
         </div>
-        <div className="mt-12">
+        <div className="mt-12 mb-10">
           <h2 className="text-xl font-bold mb-2 text-center">Create Event</h2>
-          <Link to="/connect" className="bg-blue-500 text-white px-4 py-2 rounded self-center">
+          <Link to="/connect" className="bg-blue-500 text-white px-4 py-2 rounded-2xl self-center">
             Create New Event
           </Link>
         </div>

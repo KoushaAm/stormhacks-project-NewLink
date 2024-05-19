@@ -2,13 +2,12 @@
 
 body {
   font-family: 'system-ui', 'sans-serif';
-  
 }
 
 body {
 	background: linear-gradient(-45deg, #891212, #ec3503, #b74339, #9b1b07);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 8s ease infinite;
 	height: 100vh;
 }
 

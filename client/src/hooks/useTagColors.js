@@ -4,7 +4,7 @@ export const useTagColors = () => {
     outdoors: '#DAA520',
     study: '#228B22',
     education: '#0000CD',
-    'computer science': '#800080',
+    cs: '#800080',
     sfu: '#FF69B4',
     'book club': '#FF8C00',
     reading: '#800000',

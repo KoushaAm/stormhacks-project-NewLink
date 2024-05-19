@@ -6,8 +6,8 @@ const Home = () => {
     <div className="min-h-screen">
       <Header />
 
-      <div id="section1" className="h-screen flex items-center justify-center flex-col" >
-        <HomeText/>
+      <div id="section1" className="h-screen flex items-center justify-center flex-col">
+        <HomeText />
         <div className="relative mt-12">
           <a href="#section2">
             <svg
@@ -28,10 +28,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div id='section2'>
-        <HomeLinks/>
+      <div id="section2">
+        <HomeLinks />
       </div>
-
     </div>
   );
 };

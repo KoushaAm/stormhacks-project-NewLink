@@ -22,7 +22,7 @@ const Chatbot = () => {
   useEffect(() => {
     const loadModel = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/load');
+        const response = await axios.get('http://localhost:8080/chatbot/load');
         if (
           response.data.message === 'Model initialized' ||
           response.data.message === 'Model already initialized'
@@ -47,7 +47,7 @@ const Chatbot = () => {
     setMessagesLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:8080/prompt', { question: input });
+      const response = await axios.post('http://localhost:8080/chatbot/prompt', { question: input });
       const answer = response.data.answer;
 
       setMessages([...newMessages, { text: answer, user: false }]);

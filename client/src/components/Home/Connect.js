@@ -21,7 +21,8 @@ const Connect = () => {
 
       <div className="max-w-sm p-4 bg-slate-300 rounded-lg">
         <p className="text-center text-lg text-gray-800">
-          Find volunteer students who can show you around campus. Maybe they will be your best friends one day.
+          Find volunteer students who can show you around campus. Maybe they will be your best
+          friends one day.
         </p>
       </div>
     </div>

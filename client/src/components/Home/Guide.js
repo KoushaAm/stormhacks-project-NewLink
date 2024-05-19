@@ -5,15 +5,12 @@ import { Link } from 'react-router-dom';
 const Guide = () => {
   return (
     <div className="flex items-center justify-center mb-24 mt-20">
-      <motion.div 
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.3 }}
-      >
-        <div className='bg-slate-300 ml-10 max-w-md rounded-lg p-8'>
+      <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
+        <div className="bg-slate-300 ml-10 max-w-md rounded-lg p-8">
           <p className="text-center text-lg text-gray-800">
-            We made an AI assistant to help you with general inquiries related to SFU culture and its history.
-            We have utilized the <strong>Llama 3 model</strong> and a rich database to provide you with the best possible answers.
-          
+            We made an AI assistant to help you with general inquiries related to SFU culture and
+            its history. We have utilized the <strong>Llama 3 model</strong> and a rich database to
+            provide you with the best possible answers.
           </p>
         </div>
       </motion.div>

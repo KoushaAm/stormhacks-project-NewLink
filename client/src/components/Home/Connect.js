@@ -15,7 +15,7 @@ const Connect = () => {
           exit={{ y: -20, opacity: 0 }}
         >
           <h2 className="text-4xl text-center font-bold pt-12">Connect</h2>
-          <p className="text-lg text-center">Hover over me!</p>
+          <p className="text-lg text-center">our events page</p>
         </motion.div>
       </Link>
 

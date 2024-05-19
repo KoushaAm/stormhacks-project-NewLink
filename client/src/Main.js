@@ -5,6 +5,8 @@ import Chat from './pages/Chat.js';
 import Connect from './pages/Connect.js';
 import Dashboard from './pages/Dashboard.js';
 import Courses from './pages/Courses.js';
+import Login from './pages/Login.js';
+import Signup from './pages/Signup.js';
 
 export default function Main() {
   return (
@@ -14,6 +16,8 @@ export default function Main() {
       <Route path="/connect" element={<Connect />} />
       <Route path="/courses" element={<Courses />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
     </Routes>
   );
 }

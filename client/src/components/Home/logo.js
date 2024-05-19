@@ -5,6 +5,7 @@ const Logo = () => {
   return (
     <div>
       <div className="flex items-center justify-center mt-4">
+      
         <div className="w-screen h-screen inline-flex items-center justify-center rounded-md p-12">
           <motion.h1
             initial={{ opacity: 0, scale: 0.5 }}
@@ -20,11 +21,7 @@ const Logo = () => {
 
       <div className="flex items-center justify-center">
         <div className="text-center text-lg p-4 text-gray-800">
-          <p>
-            This is a paragraph below the SFU heading.
-            <br />
-            You can add more text or content here as needed.
-          </p>
+          
         </div>
       </div>
     </div>

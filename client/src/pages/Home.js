@@ -5,10 +5,18 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <Logo />
-      <Connect />
-      <div className="mt-12 mb-12">
+      <div className="h-screen" id = 'section1'>
+        <Logo />
+        <div class="scrollButton">
+            <p class="scrollIcon"></p>
+            <a href="#section2">Section 2 </a>
+        </div>
+      </div>
+      <div id = 'section2'>
+        <Connect />
+        <div className="mt-12 mb-12">
         <Guide />
+      </div>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const Header = () => {
       <div>
         <div className="flex items-center justify-center bg-yellow-50">
           {/* Logo */}
-          <div className='bg-red-600'>
+          <div className='bg-orange-600'>
             <motion.h1
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}

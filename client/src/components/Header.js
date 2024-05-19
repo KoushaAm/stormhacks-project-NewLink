@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useUser from '../hooks/useUser.js';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   const user = useUser();
@@ -11,6 +12,7 @@ const Header = () => {
     </Link>
   );
 
+  // making a small comment to test my git
   return (
     user && (
       <div className="sticky backdrop-blur-md bg-opacity-60 bg-white top-0 z-50">

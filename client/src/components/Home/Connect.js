@@ -1,14 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';  // Make sure to import Link from react-router-dom
 
 const Connect = () => {
   return (
-    <div className="flex items-center justify-center bg-amber-700">
+    <div className="flex items-center justify-center">
       {/* Connect Card */}
-      <div className=" bg-blue-500 text-white rounded-lg hover:bg-blue-600 w-64 h-96 transition duration-300 ">
-        <h2 className="text-4xl text-center font-bold mb-12 mt-12">Connect</h2>
-        <p className="text-lg text-center">Hover over me!</p>
-      </div>
+      <Link to="/connect" className="hover:no-underline">
+        <motion.div
+          className="bg-blue-500 text-white mt-12 rounded-lg hover:bg-blue-600 w-96 h-72 transition duration-300"
+          whileHover={{ scale: 1.1 }}  // Scale up on hover
+          whileTap={{ scale: 0.9 }}    // Scale down on tap
+          initial={{ y: -20, opacity: 0 }}  // Initial position and opacity
+          animate={{ y: 0, opacity: 1 }}    // Animation to default position and opacity
+          exit={{ y: -20, opacity: 0 }}     // Exit animation
+        >
+          <h2 className="text-4xl text-center font-bold mb-12 mt-12">Connect</h2>
+          <p className="text-lg text-center">Hover over me!</p>
+        </motion.div>
+      </Link>
 
       <div>
         <p className="text-center text-lg ml-32 text-gray-800">

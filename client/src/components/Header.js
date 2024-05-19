@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useUser from '../hooks/useUser.js';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   const user = useUser();

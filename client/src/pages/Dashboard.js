@@ -40,7 +40,7 @@ const Dashboard = () => {
         )}
       </div>
       <div className="min-h-screen bg-slate-400 flex items-center justify-center">
-        <p className="text-4xl font-bold">Dashboard Page</p> 
+        <p className="text-4xl font-bold">Dashboard Page</p>
       </div>
     </>
   );
